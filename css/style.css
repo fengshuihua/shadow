@@ -1,0 +1,392 @@
+@charset "utf-8";
+/* 公共区域 */
+    *{
+      box-sizing: border-box;
+    }
+    img{
+      vertical-align: top;
+    }
+    body{
+      background-image: url(../images/bg/19.jpg);
+    }
+    .mod{
+      width: 100%;
+    }
+    .bg01{
+      background-image: url(../images/bg/001-header-bg.jpg);
+    }
+    .bg02{
+      background-image: url(../images/bg/002-.mainmenu-area-bg.jpg);
+    }
+    .bg03{
+      background-image: url(../images/bg/003-promo-area-bg.jpg);
+    }
+    .bg06{
+      background-image: url(../images/bg/006-body-bg.jpg);
+    }
+    .bg19{
+      background-image: url(../images/bg/19.jpg);
+    }
+
+/* 头部 */
+    #ohead{
+      height: 130px;
+      position: relative;
+    }
+    #logo{
+      height: 130px;
+      position: relative;
+    }
+    .logo{
+      top: 6px;
+      left: 50%;
+      margin-left: -40px;
+      position: absolute;
+    }
+    .twoCode{
+      top: 6px;
+      left: 60%;
+      position: absolute;
+    }
+
+  /* 导航栏 */
+    #nav{
+      width: 100%;
+      z-index: 10;
+      top: 130px;
+      position: absolute;
+    }
+    #nav{
+      background-color: rgba(0, 0, 0, .6);
+        box-shadow: 0 1px 2px 0 #000;
+    }
+    #headOul{
+      width: 80%;
+      margin: auto;
+      text-align: center;
+    }
+    #headOul li{
+      width: 12%;
+      float: left;
+      height: 50px;
+      line-height: 48px;
+    }
+    #headOul a{
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    #index,#headOul .index{
+      background-color: #000;
+    }
+    #index a,#headOul .index a{
+      color: #fff;
+      font-weight: 700;
+    }
+    #nav .menuNav{
+      height: 50px;
+      display: none;
+      text-align: center;
+    }
+    #menuBtn{
+      width: 50px;
+      height: 30px;
+      cursor: pointer;
+      margin: 10px auto;
+    }
+    .modRight{
+      color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+  /* 登录-注册界面 */
+    #mengPlate{
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 800;
+      display: none;
+      position: fixed;
+      background-color: rgba(180, 180, 180, .6);
+    }
+    #interface{
+      width: 400px;
+      height: 300px;
+      margin: 150px auto;
+      position: relative;
+      background-color: #fff;
+    }
+    #inter{
+      text-align: center;
+    }
+    #inter li{
+      width: 50%;
+      float: left;
+      color: #000;
+      height: 40px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 40px;
+      margin-bottom: 20px;
+    }
+    #inter+ul li p{
+      width: 60%;
+      font-size: 20px;
+      line-height: 20px;
+      margin: 20px auto;
+    }
+    #inter+ul input{
+      height: 20px;
+      float: right;
+    }
+    #inter+ul input[type="submit"]{
+      left: 50%;
+      color: #fff;
+      bottom: 20px;
+      width: 100px;
+      height: 50px;
+      font-size: 14px;
+      margin-left: -50px;
+      position: absolute;
+      background-image: url(../images/bg/002-.mainmenu-area-bg.jpg);
+    }
+    .content{
+      background-color: rgba(144, 80, 0, .5);
+    }
+    #tourist{
+      top: 0;
+      width: 12%;
+      right: 22%;
+      color: #fff;
+      height: 40px;
+      display: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+      position: absolute;
+    }
+    #hide{
+      top: 0px;
+      width: 40px;
+      right: -40px;
+      height: 40px;
+      font-size: 40px;
+      cursor: pointer;
+      line-height: 30px;
+      text-align: center;
+      position: absolute;
+    }
+    .Red{
+      background-color: #f00;
+    }
+    #out{
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      top: 0;
+      z-index: 2000;
+      background-color: rgba(0, 0, 0, .6);
+      position: fixed;
+      display: none;
+    }
+    #out span{
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      position: absolute;
+    }
+    #out div{
+      width: 200px;
+      height: 100px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -100px;
+      margin-top: -50px;
+    }
+    #out p{
+      color: #2b2b2b;
+      font-size: 20px;
+      line-height: 40px;
+      font-weight: 700;
+    }
+    #out button{
+      width: 50px;
+      height: 20px;
+      margin: 10px;
+    }
+
+
+/* 主体 */
+    #obody{
+      top: 50px;
+      width: 100%;
+      margin-bottom: 50px;
+      position: relative;
+    }
+  /* 轮播图 */
+    #carousel{
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+    }
+    #carousel>.box{
+      left: 15%;
+      width: 70%;
+      overflow: hidden;
+      position: relative;
+    }
+    #carousel ul{
+      left: 0;
+      width: 500%;
+      position: relative;
+    }
+    #carousel ul li{
+      width: 20%;
+      float: left;
+      text-align: center;
+    }
+    #carousel ul li img{
+      width: 100%;
+    }
+
+  /* 底部按钮 */
+    #btn{
+      left: 50%;
+      bottom: 50px;
+      width: 200px;
+      height: 20px;
+      position: absolute;
+      margin-left: -100px;
+    }
+    #btn span{
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      margin-left: 20px;
+      border-radius: 50%;
+      background: #2b2b2b;
+      display: inline-block;
+    }
+    #btn .slide{
+      background-color: #f96;
+    }
+
+  /* 轮播按钮 */
+    .mid{
+      top: 50%;
+      position: absolute;
+    }
+    .mid span{
+      width: 40px;
+      height: 40px;
+      font-size: 40px;
+      cursor: pointer;
+      line-height: 35px;
+      position: absolute;
+      text-align: center;
+      border-radius: 20px;
+    }
+    .mid img{
+      width: 40px;
+      height: 40px;
+    }
+    .mid .sLeft{
+      left: 15%;
+    }
+    .mid .sRight{
+      right: 15%;
+    }
+
+  /* 侧边广告 */
+    .adverti{
+      top: -2px;
+      width: 13%;
+      position: absolute;
+      text-align: center;
+    }
+    .adverti img{
+      width: 100%;
+    }
+    .adverti .Shaft{
+      width: 80%;
+      top: -570px;
+      position: relative;
+    }
+    .adverti .bottomShaft{
+      top: -570px;
+      position: relative;
+    }
+    .adverti img:not(.Shaft){
+      z-index: 1;
+      position: relative;
+    }
+    .adverti-01{
+      left: 1%;
+    }
+    .adverti-02{
+      right: 1%;
+    }
+
+  /* 广告 */
+    .advertising{
+      width: 100%;
+      padding: 50px;
+      text-align: center;
+    }
+    .advertising p{
+      margin: 0;
+      color: #fff;
+      font-size: 50px;
+      font-weight: 200;
+      padding-bottom: 50px;
+    }
+    .advertising img{
+      width: 100%;
+      margin: auto;
+      min-width: 400px;
+      max-width: 1200px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+/* 尾部 */
+
+
+
+/* 弹窗广告 */
+    .windowAdverti,.bigAdverti{
+      display: none;
+      position: fixed;
+      z-index: 980;
+    }
+    .windowAdverti img,.bigAdverti img{
+      width: 100%;
+    }
+    .down{
+      top: 0;
+      right: 0;
+      width: 36px;
+      height: 36px;
+      font-size: 40px;
+      cursor: pointer;
+      line-height: 30px;
+      position: absolute;
+      text-align: center;
+    }
+    .windowAdverti{
+
+      max-height: 200px;
+      max-width: 334px;
+      bottom: 0;
+      width: 30%;
+      right: 0;
+    }
+    .bigAdverti{
+      width: 15%;
+      bottom: 0;
+      left: 0;
+    }

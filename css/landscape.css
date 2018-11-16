@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+.SiChi .hot{
+    width: 100%;
+    text-align: center;
+}
+.SiChi .hot h1{
+    width: 100%;
+}
+.SiChi .shock{
+    display: block;
+    float: left;
+    width: 100%;
+}
+.SiChi .shock img{
+    max-width: 100%;
+}
+.SiChi ul{
+    color: #7a4204;
+    margin: 10px auto;
+}
+.SiChi ul li div{
+    display: inline-block;
+    float: left;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 345px;
+    width: 50%;
+}
+.SiChi ul li div img{
+    width: 100%;
+}
+.SiChi  ul li div .tag{
+    height: 60px;
+    width: 100%;
+    position: relative;
+}
+.SiChi  ul li div .tag p{
+    display: inline-block;
+    font-weight: 700;
+    line-height: 30px;
+    padding-top: 10px;
+    color: #7a4204;
+    text-align: left;
+    font-size: 2em;
+}
+.SiChi  ul li div .tag .price{
+    font-weight: 700;
+    line-height: 30px;
+    padding-top: 10px;
+    background-color: red;
+    color: #FFF;
+    text-align: right;
+    position: absolute;
+    left: 300px;
+}

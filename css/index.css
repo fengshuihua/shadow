@@ -1,0 +1,123 @@
+  /* 轮播图 */
+    #carousel{
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+    }
+    #carousel>.box{
+      left: 15%;
+      width: 70%;
+      overflow: hidden;
+      position: relative;
+    }
+    #carousel ul{
+      left: 0;
+      width: 500%;
+      position: relative;
+    }
+    #carousel ul li{
+      width: 20%;
+      float: left;
+      text-align: center;
+    }
+    #carousel ul li img{
+      width: 100%;
+    }
+
+  /* 底部按钮 */
+    #btn{
+      left: 50%;
+      bottom: 50px;
+      width: 200px;
+      height: 20px;
+      position: absolute;
+      margin-left: -100px;
+    }
+    #btn span{
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      margin-left: 20px;
+      border-radius: 50%;
+      background: #2b2b2b;
+      display: inline-block;
+    }
+    #btn .slide{
+      background-color: #f96;
+    }
+
+  /* 轮播按钮 */
+    .mid{
+      top: 50%;
+      position: absolute;
+    }
+    .mid span{
+      width: 40px;
+      height: 40px;
+      font-size: 40px;
+      cursor: pointer;
+      line-height: 35px;
+      position: absolute;
+      text-align: center;
+      border-radius: 20px;
+    }
+    .mid img{
+      width: 40px;
+      height: 40px;
+    }
+    .mid .sLeft{
+      left: 15%;
+    }
+    .mid .sRight{
+      right: 15%;
+    }
+
+  /* 侧边广告 */
+    .adverti{
+      top: -2px;
+      width: 13%;
+      position: absolute;
+      text-align: center;
+    }
+    .adverti img{
+      width: 100%;
+    }
+    .adverti .Shaft{
+      width: 80%;
+      top: -570px;
+      position: relative;
+    }
+    .adverti .bottomShaft{
+      top: -570px;
+      position: relative;
+    }
+    .adverti img:not(.Shaft){
+      z-index: 1;
+      position: relative;
+    }
+    .adverti-01{
+      left: 1%;
+    }
+    .adverti-02{
+      right: 1%;
+    }
+
+  /* 新品 */
+    .new-prant{
+      text-align: center;
+      margin-top: 50px;
+    }
+    .new-prant h2{
+      font-size: 30px;
+      font-weight: 700;
+      margin: 50px auto;
+    }
+    .new-prant .new-season img{
+      width: 16%;
+      margin: 10px;
+    }
+    .new-prant .new-flower img{
+      max-width: 20%;
+      width: 218px;
+      margin: 10px;
+    }

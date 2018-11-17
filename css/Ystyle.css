@@ -41,7 +41,7 @@ body {
     text-align: center;
     overflow: hidden;
     width: 1132px;
-    margin: 50px auto;
+    margin: 70px auto;
     border-radius: 10px;
     border-top: 10px rgba(255,255,255,.4) solid;
     border-bottom: 10px rgba(255,255,255,.4) solid;
@@ -300,13 +300,11 @@ body {
     height: 370px;
 }
 .left-class {
-    margin-top: 20px;
     color: #763b09;
     font-size: 18px;
     font-weight: 900;
 }
 .right-class{
-    margin-top: 20px;
     color: #2c5918;
     font-weight: 900;
     font-size: 15px;
@@ -566,4 +564,48 @@ body {
     color: black;
     font-weight: 700;
 }
+/*vertical 3*/
+.eight {
+    position: relative;
+    width: 1132px;
+    height: 600px;
+    margin: 0 auto;
+}
+.eight ul {
+    position: relative;
+}
+.eight ul li {
+    height: 0;
+    position: absolute;
+    left: 200px;
+    top: 0;
+}
+.eight img {
+    border: 1px solid black;
+    height: 450px;
+}
+.eight p {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+}
+.eight span {
+    cursor: pointer;
+    font-size: 70px;
+    position: absolute;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    font-weight: 500;
+    color: #2c5918;
+}
+.eight .ctl_prev {
+    left: 0;
+}
+.eight .ctl_next {
+    right: 0;
+}
+
 

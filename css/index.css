@@ -106,18 +106,27 @@
     .new-prant{
       text-align: center;
       margin-top: 50px;
+      font-family: 楷体;
     }
     .new-prant h2{
+      font-size: 48px;
+      margin: 40px auto 0;
+      background: url('../images/bg/003-promo-area-bg.jpg');
+    }
+    .new-prant .new-hotprant div{
+      width: 20%;
+      float: left;
+      margin: 0 2.5% 80px;
+    }
+    .new-prant p{
       font-size: 30px;
       font-weight: 700;
-      margin: 50px auto;
+      margin: 10px auto 0;
     }
-    .new-prant .new-season img{
-      width: 16%;
-      margin: 10px;
+    .new-prant span{
+      font-weight: 700;
+      font-size: 20px;
     }
-    .new-prant .new-flower img{
-      max-width: 20%;
-      width: 218px;
-      margin: 10px;
+    .new-prant .new-hotprant img{
+      width: 100%;
     }

@@ -7,7 +7,7 @@
       vertical-align: top;
     }
     body{
-      background-image: url(../images/bg/19.jpg);
+      background-image: url(../images/bg/007-bg.jpg);
     }
     .mod{
       width: 100%;
@@ -24,8 +24,8 @@
     .bg06{
       background-image: url(../images/bg/006-body-bg.jpg);
     }
-    .bg19{
-      background-image: url(../images/bg/19.jpg);
+    .bg07{
+      background-image: url(../images/bg/007-bg.jpg);
     }
 
 /* 头部 */
@@ -58,7 +58,6 @@
     }
     #nav{
       background-color: rgba(0, 0, 0, .6);
-        box-shadow: 0 1px 2px 0 #000;
     }
     #headOul{
       width: 80%;
@@ -227,7 +226,7 @@
       margin-bottom: 50px;
       position: relative;
     }
-  /* 轮播图 */
+/*    轮播图
     #carousel{
       margin: 0 auto;
       overflow: hidden;
@@ -253,7 +252,7 @@
       width: 100%;
     }
 
-  /* 底部按钮 */
+   底部按钮
     #btn{
       left: 50%;
       bottom: 50px;
@@ -275,7 +274,7 @@
       background-color: #f96;
     }
 
-  /* 轮播按钮 */
+   轮播按钮
     .mid{
       top: 50%;
       position: absolute;
@@ -301,7 +300,7 @@
       right: 15%;
     }
 
-  /* 侧边广告 */
+    侧边广告
     .adverti{
       top: -2px;
       width: 13%;
@@ -329,7 +328,7 @@
     }
     .adverti-02{
       right: 1%;
-    }
+    } */
 
   /* 广告 */
     .advertising{
@@ -358,7 +357,7 @@
 
 
 /* 弹窗广告 */
-    .windowAdverti,.bigAdverti{
+    /* .windowAdverti,.bigAdverti{
       display: none;
       position: fixed;
       z-index: 980;
@@ -389,4 +388,28 @@
       width: 15%;
       bottom: 0;
       left: 0;
+    } */
+    .windowAdverti{
+      right: 0;
+      bottom: 0;
+      width: 30%;
+      z-index: 980;
+      display: none;
+      position: fixed;
+      max-width: 334px;
+      max-height: 200px;
+    }
+    .windowAdverti img{
+      width: 100%;
+    }
+    .down{
+      top: 0;
+      right: 0;
+      width: 36px;
+      height: 36px;
+      font-size: 40px;
+      cursor: pointer;
+      line-height: 30px;
+      position: absolute;
+      text-align: center;
     }

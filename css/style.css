@@ -65,13 +65,14 @@
       text-align: center;
     }
     #headOul li{
-      width: 12%;
+      width: 18%;
       float: left;
       height: 50px;
       line-height: 48px;
     }
     #headOul a{
       color: #fff;
+      padding: 16px 50px;
       font-size: 14px;
       font-weight: 700;
     }

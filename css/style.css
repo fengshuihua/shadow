@@ -65,15 +65,18 @@
       text-align: center;
     }
     #headOul li{
+        float: left;
+      /*margin-left: 10px;*/
       width: 18%;
-      float: left;
       height: 50px;
       line-height: 48px;
     }
     #headOul a{
+        display: inline-block;
       color: #fff;
-      padding: 16px 50px;
+      /*padding: 16px 50px;*/
       font-size: 14px;
+        width: 100%;
       font-weight: 700;
     }
     #index,#headOul .index{

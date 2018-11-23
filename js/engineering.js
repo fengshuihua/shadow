@@ -42,7 +42,7 @@ $(function(){
         $('.menuNav').css({display:'inline-block'});
         $('.modRight').css({
           top: 0,
-          width: 12+'%',
+          width: 18+'%',
           position: 'absolute',
         });
         $('.modRight:eq(0)').css({
@@ -63,7 +63,7 @@ $(function(){
         });
       }else{
         $('#headOul').css({width: 80+'%',});
-        $('#headOul li:not(.modRight,#tourist)').css({width:12+'%',display:'block'});
+        $('#headOul li:not(.modRight,#tourist)').css({width:18+'%',display:'block'});
         $('.menuNav').css({display:'none'});
         $('.modRight').css({
           top: 0,

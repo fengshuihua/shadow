@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/Zstyle.css">
   <link rel="stylesheet" href="css/ZZindex.css">
     <link rel="stylesheet" href="css/Ystyle.css">
+    <link rel="stylesheet" href="css/link.css">
 
 </head>
 <body>
@@ -23,11 +24,9 @@
       <div class="clearfix mod menuNav"><button id="menuBtn">目录</button></div>
       <ul id="headOul" class="clearfix">
         <li><a target="_blank" href="index.html">首页</a></li>
-        <li><a target="_blank" href="horizontal.html">横版画</a></li>
         <li id="index"><a target="_blank" href="square.html">四方画</a></li>
         <li><a target="_blank" href="vertical.html">竖条屏</a></li>
-        <li><a target="_blank" href="landscape.html">山水画</a></li>
-        <li><a target="_blank" href="hongyun.html">鸿运画</a></li>
+        <li><a target="_blank" href="geomanticFan.html">折扇</a></li>
         <li class="modRight login">登录</li>
         <li class="modRight registered">注册</li>
         <li id="tourist">游客</li>
@@ -153,27 +152,78 @@
         <div class="mid-content1-text">竖版四条屏</div>
     </div> -->
       <div class="season">
-          <div class="zlink"><p class="name">春</p><span>¥500</span><div><img src="images/square/301.jpg" alt=""></div></div>
-          <div class="zlink"><p class="name">夏</p><span>¥500</span><div><img src="images/square/302.jpg" alt=""></div></div>
-          <div class="zlink"><p class="name">秋</p><span>¥500</span><div><img src="images/square/303.jpg" alt=""></div></div>
-          <div class="zlink"><p class="name">冬</p><span>¥500</span><div><img src="images/square/304.jpg" alt=""></div></div>
+          <div><p class="zlink">春</p><span class="zzprice">¥300</span><div><img class="picc" src="images/square/301.jpg" alt=""></div></div>
+          <div><p class="zlink">夏</p><span class="zzprice">¥600</span><div><img class="picc" src="images/square/302.jpg" alt=""></div></div>
+          <div><p class="zlink">秋</p><span class="zzprice">¥800</span><div><img class="picc" src="images/square/303.jpg" alt=""></div></div>
+          <div><p class="zlink">冬</p><span class="zzprice">¥900</span><div><img class="picc" src="images/square/304.jpg" alt=""></div></div>
+
       </div>
 
     <div class="mid-content2  left">
         <ul>
-            <li class="li-class"><img src="images/square/101.jpg" alt=""><span class="left-class">年年有余</span><span class="right-class">￥300 67cm×67cm</span></li>
-            <li class="li-class"><img src="images/square/102.jpg" alt=""><span class="left-class">富贵吉祥</span><span class="right-class">￥300 67cm×67cm</span></li>
-            <li class="li-class"><img src="images/square/103.jpg" alt=""><span class="left-class">鸿运当头</span><span class="right-class">￥300 67cm×67cm</span></li>
-            <li class="li-class"><img src="images/square/104.jpg" alt=""><span class="left-class">年年有余</span><span class="right-class">￥300 67cm×67cm</span></li>
+            <li class="li-class zlink"><img class="picc" src="images/square/101.jpg" alt=""><span class="left-class name">年年有余</span><span class="right-class zzprice">¥300 </span></li>
+            <li class="li-class zlink"><img class="picc" src="images/square/102.jpg" alt=""><span class="left-class name">富贵吉祥</span><span class="right-class zzprice">¥400 </span></li>
+            <li class="li-class zlink"><img class="picc" src="images/square/103.jpg" alt=""><span class="left-class name">鸿运当头</span><span class="right-class zzprice">¥500 </span></li>
+            <li class="li-class zlink"><img class="picc" src="images/square/104.jpg" alt=""><span class="left-class name">如鱼得水</span><span class="right-class zzprice">¥600 </span></li>
         </ul>
         <img class="text" src="images/bg/1541164512(1).jpg" alt="">
     </div>
+
+
+      // 链接跳转
+      <!--<div class="zzmask">-->
+          <!--<div class="zlink zed">-->
+              <!--<img src="img/2-01.jpg"/>-->
+              <!--<span class="ztitle">年年有余</span>-->
+              <!--<span class="zjia">998</span>-->
+              <!--<p class="zcar">加入购物车</p>-->
+          <!--</div>-->
+      <!--</div>-->
+      <!--<div class="zzlist">-->
+          <div class="z-data">
+              <h3>商 品 列 表</h3>
+              <span class="zclose"> < 关闭</span>
+              <ul>
+                  <!--<li>-->
+                  <!--<span class="zleft">福禄满堂</span>-->
+                  <!--<span class="zleft">抢购价365元</span>-->
+                  <!--<span class="pre pay">付款</span>-->
+                  <!--<span class="pre delete">删除</span>-->
+                  <!--</li>-->
+              </ul>
+          <!--</div>-->
+          <div class="zpay" id="zpay">
+              <h3></h3>
+              <p>购买数量 (<span>限购 5 件</span>)
+                  <select name="sel" id="sel">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </select>
+              </p>
+              <span class="count"></span>
+              <div class="mode">
+                  <span class="ment"></span>
+                  <span class="ment"></span>
+                  <span class="ment"></span>
+                  <span class="code"></span>
+                  <span class="code"></span>
+                  <span class="code"></span>
+              </div>
+          </div>
+      </div>
+
+
+
+
     <div class="mid-content2  right">
         <ul>
-            <li class="li-class"><img src="images/square/105.jpg" alt=""><span class="left-class">年年有余</span><span class="right-class">￥300 67cm×67cm</span></li>
-            <li class="li-class"><img src="images/square/106.jpg" alt=""><span class="left-class">富贵吉祥</span><span class="right-class">￥300 67cm×67cm</span></li>
-            <li class="li-class"><img src="images/square/107.jpg" alt=""><span class="left-class">鸿运当头</span><span class="right-class">￥300 67cm×67cm</span></li>
-            <li class="li-class"><img src="images/square/108.jpg" alt=""><span class="left-class">年年有余</span><span class="right-class">￥300 67cm×67cm</span></li>
+            <li class="li-class zlink"><img class="picc" src="images/square/105.jpg" alt=""><span class="left-class name">年年有余</span><span class="right-class zzprice">¥228</span></li>
+            <li class="li-class zlink"><img class="picc" src="images/square/106.jpg" alt=""><span class="left-class name">富贵吉祥</span><span class="right-class zzprice">¥458</span></li>
+            <li class="li-class zlink"><img class="picc" src="images/square/107.jpg" alt=""><span class="left-class name">鸿运当头</span><span class="right-class zzprice">¥788</span></li>
+            <li class="li-class zlink"><img class="picc" src="images/square/108.jpg" alt=""><span class="left-class name">年年有余</span><span class="right-class zzprice">¥668</span></li>
         </ul>
         <img class="text" src="images/bg/1541164512(1).jpg" alt="">
     </div>
@@ -184,22 +234,22 @@
         </div>
         <div class="right-box">
             <ul>
-                <li><p><span class="left-s">玉兰双雀</span><span class="right-s">￥365</span></p><img src="images/square/1.jpg" alt=""></li>
-                <li><p><span class="left-s">春花烂漫</span><span class="right-s">￥365</span></p><img src="images/square/2.jpg" alt=""></li>
-                <li><p><span class="left-s">清香久远</span><span class="right-s">￥365</span></p><img src="images/square/3.jpg" alt=""></li>
-                <li><p><span class="left-s">馨香长寿</span><span class="right-s">￥365</span></p><img src="images/square/4.jpg" alt=""></li>
-                <li><p><span class="left-s">竹报平安</span><span class="right-s">￥365</span></p><img src="images/square/5.jpg" alt=""></li>
-                <li><p><span class="left-s">春花烂漫</span><span class="right-s">￥365</span></p><img src="images/square/6.jpg" alt=""></li>
-                <li><p><span class="left-s">路路皆通</span><span class="right-s">￥365</span></p><img src="images/square/7.jpg" alt=""></li>
-                <li><p><span class="left-s">安居乐业</span><span class="right-s">￥365</span></p><img src="images/square/8.jpg" alt=""></li>
-                <li><p><span class="left-s">年年有余</span><span class="right-s">￥365</span></p><img src="images/square/9.jpg" alt=""></li>
-                <li><p><span class="left-s">喜乐多福</span><span class="right-s">￥365</span></p><img src="images/square/10.jpg" alt=""></li>
-                <li><p><span class="left-s">清香久远</span><span class="right-s">￥365</span></p><img src="images/square/11.jpg" alt=""></li>
-                <li><p><span class="left-s">春花烂漫</span><span class="right-s">￥365</span></p><img src="images/square/12.jpg" alt=""></li>
-                <li><p><span class="left-s">年年有余</span><span class="right-s">￥365</span></p><img src="images/square/13.jpg" alt=""></li>
-                <li><p><span class="left-s">年年有余</span><span class="right-s">￥365</span></p><img src="images/square/14.jpg" alt=""></li>
-                <li><p><span class="left-s">硕果累累</span><span class="right-s">￥365</span></p><img src="images/square/15.jpg" alt=""></li>
-                <li><p><span class="left-s">馨香长远</span><span class="right-s">￥365</span></p><img src="images/square/16.jpg" alt=""></li>
+                <li><p><span class="left-s zlink">玉兰双雀</span><span class="right-s zzprice">¥365</span></p><img class="picc" src="images/square/1.jpg" alt=""></li>
+                <li><p><span class="left-s zlink">春花烂漫</span><span class="right-s zzprice">¥365</span></p><img class="picc" src="images/square/2.jpg" alt=""></li>
+                <li><p><span class="left-s zlink">清香久远</span><span class="right-s zzprice">¥365</span></p><img class="picc" src="images/square/3.jpg" alt=""></li>
+                <li><p><span class="left-s zlink">馨香长寿</span><span class="right-s zzprice">¥365</span></p><img class="picc" src="images/square/4.jpg" alt=""></li>
+                <li><p><span class="left-s zlink">竹报平安</span><span class="right-s zzprice">¥365</span></p><img class="picc" src="images/square/5.jpg" alt=""></li>
+                <li><p><span class="left-s zlink">翩翩起舞</span><span class="right-s zzprice">¥365</span></p><img class="picc" src="images/square/6.jpg" alt=""></li>
+                <li><p><span class="left-s zlink">路路皆通</span><span class="right-s zzprice">¥365</span></p><img class="picc" src="images/square/7.jpg" alt=""></li>
+                <li><p><span class="left-s zlink">安居乐业</span><span class="right-s zzprice">¥365</span></p><img class="picc" src="images/square/8.jpg" alt=""></li>
+                <li><p><span class="left-s zlink">鱼水深情</span><span class="right-s zzprice">¥365</span></p><img class="picc" src="images/square/9.jpg" alt=""></li>
+                <li><p><span class="left-s zlink">喜乐多福</span><span class="right-s zzprice">¥365</span></p><img class="picc" src="images/square/10.jpg" alt=""></li>
+                <li><p><span class="left-s zlink">香远益清</span><span class="right-s zzprice">¥365</span></p><img class="picc" src="images/square/11.jpg" alt=""></li>
+                <li><p><span class="left-s zlink">婀娜多姿</span><span class="right-s zzprice">¥365</span></p><img class="picc" src="images/square/12.jpg" alt=""></li>
+                <li><p><span class="left-s zlink">鱼跃龙门</span><span class="right-s zzprice">¥365</span></p><img class="picc" src="images/square/13.jpg" alt=""></li>
+                <li><p><span class="left-s zlink">相濡以沫</span><span class="right-s zzprice">¥365</span></p><img class="picc" src="images/square/14.jpg" alt=""></li>
+                <li><p><span class="left-s zlink">硕果累累</span><span class="right-s zzprice">¥365</span></p><img class="picc" src="images/square/15.jpg" alt=""></li>
+                <li><p><span class="left-s zlink">寿比南山</span><span class="right-s zzprice">¥365</span></p><img class="picc" src="images/square/16.jpg" alt=""></li>
             </ul>
         </div>
         <p><span></span></p>
@@ -242,5 +292,8 @@
   <script src="js/滑动图.js"></script>
   <script src="js/四方花鸟画.js"></script>
   <script src="js/春夏秋冬.js"></script>
+    <script src="js/link.js"></script>
+
+
 </body>
 </html>

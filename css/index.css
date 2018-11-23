@@ -110,22 +110,34 @@
     }
     .new-prant h2{
       font-size: 48px;
-      margin: 40px auto 0;
+      margin: 40px auto;
       background: url('../images/bg/003-promo-area-bg.jpg');
     }
-    .new-prant .new-hotprant div{
-      width: 20%;
+    .new-prant .new-hotprant:not(.prant-c) div{
       float: left;
       margin: 0 2.5% 80px;
     }
+    .new-prant .prant-a div{
+      width: 45%;
+    }
+    .new-prant .prant-b div{
+      width: 20%;
+    }
+    .new-prant .prant-c div{
+      width: 80%;
+      margin: 0 auto 80px;
+    }
     .new-prant p{
-      font-size: 30px;
+      font-size: 36px;
       font-weight: 700;
       margin: 10px auto 0;
     }
     .new-prant span{
       font-weight: 700;
-      font-size: 20px;
+      font-size: 24px;
+      padding: 5px 25px 5px 20px;
+      background-color: #f24;
+      color: #fff;
     }
     .new-prant .new-hotprant img{
       width: 100%;

@@ -38,6 +38,7 @@
         #fan .ctl_dir .ctl_next {
             width: 20px;
             height: 34px;
+            /*background: url("../images/geomanticFan/icon.png") no-repeat;*/
             position: absolute;
             top: 50%;
             transform: translate(0, -50%);
@@ -58,7 +59,7 @@
             cursor: pointer;
             background-color: rgba(0, 0, 0, .5);
             position: absolute;
-            z-index: 100;
+            /*z-index: 100;*/
             right: -120px;
             color: #fff;
         }

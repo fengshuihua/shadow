@@ -120,15 +120,15 @@ $(function(){
         },function () {
             if(k < K && K < -k){
                 if(x > x0){
-                    ctr_div.stop().animate({"left":liw,"opacity":0},600)
+                    ctr_div.animate({"left":liw,"opacity":0},600)
                 }else{
-                    ctr_div.stop().animate({"left":-liw,"opacity":0},600)
+                    ctr_div.animate({"left":-liw,"opacity":0},600)
                 }
             }else{
                 if(y > y0){
-                    ctr_div.stop().animate({"top":-lih,"opacity":0},600)
+                    ctr_div.animate({"top":-lih,"opacity":0},600)
                 }else{
-                    ctr_div.stop().animate({"top":lih,"opacity":0},600)
+                    ctr_div.animate({"top":lih,"opacity":0},600)
                 }
             }
         })

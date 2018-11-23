@@ -1,0 +1,83 @@
+#fan {
+            max-width: 65%;
+            min-width: 860px;
+            min-height: 860px;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        #fan ul {
+            width: 100%;
+            list-style: none;
+            position: relative;
+        }
+
+        #fan ul li {
+            width: 100%;
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        #fan ul li:first-child{
+            display: list-item;
+        }
+        #fan ul li p,#fan ul li span{
+            display: none;
+        }
+        #fan ul li img{
+            width: 100%;
+            cursor: pointer;
+        }
+
+        #fan .ctl_dir {
+            cursor: pointer;
+        }
+
+        #fan .ctl_dir .ctl_prev,
+        #fan .ctl_dir .ctl_next {
+            width: 20px;
+            height: 34px;
+            background: url("../images/geomanticFan/icon.png") no-repeat;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+        #fan .ctl_dir .ctl_prev {
+            left: 0;
+        }
+
+        #fan .ctl_dir .ctl_next {
+            right: 0;
+            background-position: -9px -45px;
+        }
+
+        #fan .ctl {
+            width: 120px;
+            text-align: center;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, .5);
+            position: absolute;
+            z-index: 100;
+            right: -120px;
+            color: #fff;
+        }
+
+        #fan .ctl .ctl_icon {
+            text-align: center;
+            font-size: 16px;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            display: inline-block;
+        }
+
+        #fan .ctl .current {
+            color: #000;
+            font-size: 26px;
+            font-weight: 700;
+            height: 58px;
+            background-color: #f96;
+        }
+

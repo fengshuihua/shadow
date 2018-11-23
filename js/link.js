@@ -4,7 +4,7 @@ $(function () {
     var strz = 0;
 
 
-    $('.li-class').on('click',function () {
+    $('.zlink').on('click',function () {
         // alert(1);
         var that = $(this);
         var odiv = $('<div></div>');
@@ -12,10 +12,10 @@ $(function () {
         // console.log(opicc);
         var html =
             '<div class="zlink zed">' +
-            '<img src="' + opicc + '"/>' +
+            '<div><img src="' + opicc + '"/></div>' +
             '<span class="ztitle">' + $(this).find('.name').text() + '</span>' +
             '<span class="zjia">' + $(this).find(".zzprice").text() + '</span>' +
-            '<p class="zcar">加入购物车</p>' +
+            '<p class="zcar"> 加 入 购 物 车 </p>' +
             '</div>';
         odiv.html(html);
         odiv.addClass('zzmask');
@@ -23,7 +23,7 @@ $(function () {
         // console.log($('.zcar'));
 
         $('.zcar').on('click',function () {
-            alert(20);
+            alert(21);
             $('.z-data').fadeIn(600);
             $(this).parent('div').remove();
             //添加购物车
@@ -133,7 +133,7 @@ $(function () {
             // 创建li
             function creatli(obj) {
                 var zzsrc = obj.content;
-                var zarr = zzsrc.split(',￥');
+                var zarr = zzsrc.split(',¥');
                 var zli = $('<li></li>');
                 var ohtml =
                     '<span class="zleft">' + zarr[0] + '</span>' +

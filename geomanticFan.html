@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/Zstyle.css">
   <link rel="stylesheet" href="css/ZZindex.css">
   <link rel="stylesheet" href="css/fan.css">
+    <link rel="stylesheet" href="css/link.css">
+
 </head>
 <body>
   <!-- 头部 -->
@@ -100,22 +102,74 @@
   <div id="obody">
     <div id="fan" class="clearfix">
         <ul>
-            <li><img src="images/geomanticFan/1.jpg" ><p class="name">梅</p><span class="price">￥285</span></li>
-            <li><img src="images/geomanticFan/2.jpg" ><p class="name">兰</p><span class="price">￥285</span></li>
-            <li><img src="images/geomanticFan/3.jpg" ><p class="name">竹</p><span class="price">￥285</span></li>
-            <li><img src="images/geomanticFan/4.jpg" ><p class="name">菊</p><span class="price">￥285</span></li>
-            <li><img src="images/geomanticFan/5.jpg" ><p class="name">蝶恋花</p><span class="price">￥285</span></li>
-            <li><img src="images/geomanticFan/6.jpg" ><p class="name">风和竹影</p><span class="price">￥285</span></li>
-            <li><img src="images/geomanticFan/7.jpg" ><p class="name">孤舟山水</p><span class="price">￥285</span></li>
-            <li><img src="images/geomanticFan/8.jpg" ><p class="name">水天一色</p><span class="price">￥285</span></li>
-            <li><img src="images/geomanticFan/9.jpg" ><p class="name">虾蟹</p><span class="price">￥285</span></li>
-            <li><img src="images/geomanticFan/10.jpg" ><p class="name">事事如意</p><span class="price">￥285</span></li>
+            <li class="zlink"><img class="picc" src="images/geomanticFan/1.jpg" ><p class="name">梅</p><span class="zzprice">￥285</span></li>
+            <li class="zlink"><img class="picc" src="images/geomanticFan/2.jpg" ><p class="name">兰</p><span class="zzprice">￥285</span></li>
+            <li class="zlink"><img class="picc" src="images/geomanticFan/3.jpg" ><p class="name">竹</p><span class="zzprice">￥285</span></li>
+            <li class="zlink"><img class="picc" src="images/geomanticFan/4.jpg" ><p class="name">菊</p><span class="zzprice">￥285</span></li>
+            <li class="zlink"><img class="picc" src="images/geomanticFan/5.jpg" ><p class="name">蝶恋花</p><span class="zzprice">￥285</span></li>
+            <li class="zlink"><img class="picc" src="images/geomanticFan/6.jpg" ><p class="name">风和竹影</p><span class="zzprice">￥285</span></li>
+            <li class="zlink"><img class="picc" src="images/geomanticFan/7.jpg" ><p class="name">孤舟山水</p><span class="zzprice">￥285</span></li>
+            <li class="zlink"><img class="picc" src="images/geomanticFan/8.jpg" ><p class="name">水天一色</p><span class="zzprice">￥285</span></li>
+            <li class="zlink"><img class="picc" src="images/geomanticFan/9.jpg" ><p class="name">虾蟹</p><span class="zzprice">￥285</span></li>
+            <li class="zlink"><img class="picc" src="images/geomanticFan/10.jpg" ><p class="name">事事如意</p><span class="zzprice">￥285</span></li>
         </ul>
         <!-- 指示器 -->
         <div class="ctl">
         </div>
     </div>
   </div>
+
+  <!--链接跳转-->
+
+  <!--<div class="zzmask">-->
+  <!--<div class="zlink zed">-->
+  <!--<div><img src="img/2-01.jpg"/></div>-->
+  <!--<div>-->
+  <!--<span class="ztitle">年年有余</span>-->
+  <!--<span class="zjia">998</span>-->
+  <!--<p class="zcar">加入购物车</p>-->
+  <!--</div>-->
+  <!--</div>-->
+  <!--</div>-->
+  <!--<div class="zzlist">-->
+  <div class="z-data">
+      <h3>商 品 列 表</h3>
+      <span class="zclose"> < 关闭</span>
+      <ul>
+          <!--<li>-->
+          <!--<span class="zleft">福禄满堂</span>-->
+          <!--<span class="zleft">抢购价365元</span>-->
+          <!--<span class="pre pay">付款</span>-->
+          <!--<span class="pre delete">删除</span>-->
+          <!--</li>-->
+      </ul>
+      <!--</div>-->
+      <div class="zpay" id="zpay">
+          <h3></h3>
+          <p>购买数量 (<span>限购 5 件</span>)
+              <select name="sel" id="sel">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+              </select>
+          </p>
+          <span class="count"></span>
+          <div class="mode">
+              <span class="ment"></span>
+              <span class="ment"></span>
+              <span class="ment"></span>
+              <span class="code"></span>
+              <span class="code"></span>
+              <span class="code"></span>
+          </div>
+      </div>
+  </div>
+
+
+
+
   <!-- 尾部 -->
   <div id="footer" class="mod">
     <div class="foot-up">
@@ -148,5 +202,6 @@
   <script src="js/Zindex.js"></script>
   <script src="js/Yscript.js"></script>
   <script src="js/fan.js"></script>
+  <script src="js/link.js"></script>
 </body>
 </html>

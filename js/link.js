@@ -34,7 +34,7 @@ $(function () {
 
         $('.zcar').on('click',function (e) {
             e.stopPropagation();
-            // alert(21);
+            // alert(30);
             $('.zzmask').fadeIn(600);
             $('.z-data').fadeIn(600);
             $(this).parent('div').remove();
@@ -43,6 +43,7 @@ $(function () {
                     type: 'get',
                     url: 'shadow.php',
                     data: 'act=add&content='+ that.find('.name').text() + ',' + that.find(".zzprice").text(),
+                    // data: 'act=add&content=666,¥999',
                     dataType: 'json',
                     success: function (obj) {
                         // console.log(obj);

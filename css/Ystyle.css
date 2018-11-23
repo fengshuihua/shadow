@@ -273,6 +273,9 @@ body {
     background: rgba(208, 167, 58, 0.7);
     color: #8b400a;
 }
+.mid-content1-text2{
+    left: 0;
+}
 .left-content,.right-content {
     margin: 0 30px;
     perspective: 500px;
@@ -620,6 +623,9 @@ body {
 }
 .eight .ctl_next {
     right: 0;
+}
+img {
+    cursor: pointer;
 }
 
 

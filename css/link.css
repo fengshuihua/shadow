@@ -36,8 +36,8 @@ html,body {
     /*display: none;*/
 }
 .zzmask .zed {
-    width: 212px;
-    height: 403px;
+    max-width: 25%;
+    max-height: 60%;
     margin: 50px auto;
 }
 .ztitle,.zjia {

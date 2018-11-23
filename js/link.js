@@ -20,10 +20,19 @@ $(function () {
         odiv.html(html);
         odiv.addClass('zzmask');
         $('body').append(odiv);
+        odiv.click(function () {
+            // alert(1)
+            $(this).fadeOut(600);
+        });
+        $('.zlink').click(function (e) {
+            e.stopPropagation();
+        });
         // console.log($('.zcar'));
 
-        $('.zcar').on('click',function () {
+        $('.zcar').on('click',function (e) {
+            e.stopPropagation();
             alert(21);
+            $('.zzmask').fadeIn(600);
             $('.z-data').fadeIn(600);
             $(this).parent('div').remove();
             //添加购物车
@@ -124,10 +133,11 @@ $(function () {
 
 
             $('.zclose').click(function () {
-                alert(102);
+                // alert(102);
                 $('.z-data').fadeOut(600);
                 $('.zzmask').fadeOut(600);
             });
+            
 
 
             // 创建li

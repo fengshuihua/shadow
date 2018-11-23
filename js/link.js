@@ -4,7 +4,7 @@ $(function () {
     var strz = 0;
 
 
-    $('.li-class').on('click',function () {
+    $('.zlink').on('click',function () {
         // alert(1);
         var that = $(this);
         var odiv = $('<div></div>');
@@ -12,10 +12,10 @@ $(function () {
         // console.log(opicc);
         var html =
             '<div class="zlink zed">' +
-            '<img src="' + opicc + '"/>' +
+            '<div><img src="' + opicc + '"/></div>' +
             '<span class="ztitle">' + $(this).find('.name').text() + '</span>' +
             '<span class="zjia">' + $(this).find(".zzprice").text() + '</span>' +
-            '<p class="zcar">加入购物车</p>' +
+            '<p class="zcar"> 加 入 购 物 车 </p>' +
             '</div>';
         odiv.html(html);
         odiv.addClass('zzmask');

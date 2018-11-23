@@ -340,18 +340,18 @@ body {
 }
 .left .text {
     position: absolute;
-    right: 0;
+    right: 10px;
     top:0;
     border-bottom: 2px solid brown;
     border-right:2px solid brown ;
-    padding-bottom: 10px;
+    padding-bottom: 0;
 }
 .right .text {
-    padding-top: 10px;
+    /*padding-top: 10px;*/
     border-top: 2px solid brown;
     border-left: 2px solid brown;
     position: absolute;
-    left: 0px;
+    left: 0;
     top:0;
 }
 /*第三个内容*/
@@ -405,6 +405,9 @@ body {
     position: absolute;
     bottom: 150px;
     left: 150px;
+}
+.left-price img {
+    display: none;
 }
 .left-price span:nth-of-type(2){
     display: none;
@@ -566,7 +569,9 @@ body {
     color: #fff;
     font-size: 14px;
 }
+
 .right-box p .right-s {
+    margin-left: 20px;
     color: black;
     font-weight: 700;
 }

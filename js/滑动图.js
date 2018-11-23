@@ -7,7 +7,7 @@ $(function () {
     $(".left ul").hover(
         function () {
             $(".left .li-class").each(function (index) {
-                $(this).stop().animate({"left":293*(index)},800);
+                $(this).stop().animate({"left":290*(index)},800);
             })
             $(".left .left-class,.left .right-class").stop().fadeIn(500);
             $(".left .text").stop().fadeOut(500);
@@ -26,7 +26,7 @@ $(function () {
     $(".right ul").hover(
         function () {
             $(".right .li-class").each(function (index) {
-                $(this).stop().animate({"right":293*(index)},800);
+                $(this).stop().animate({"right":290*(index)},800);
             })
             $(".right .left-class,.right .right-class").stop().fadeIn(500);
             $(".right .text").stop().fadeOut(500);

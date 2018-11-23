@@ -13,9 +13,11 @@ $(function () {
         var html =
             '<div class="zlink zed">' +
             '<div><img src="' + opicc + '"/></div>' +
+            '<div>' +
             '<span class="ztitle">' + $(this).find('.name').text() + '</span>' +
             '<span class="zjia">' + $(this).find(".zzprice").text() + '</span>' +
             '<p class="zcar"> 加 入 购 物 车 </p>' +
+            '</div>' +
             '</div>';
         odiv.html(html);
         odiv.addClass('zzmask');
@@ -27,11 +29,12 @@ $(function () {
         $('.zlink').click(function (e) {
             e.stopPropagation();
         });
+
         // console.log($('.zcar'));
 
         $('.zcar').on('click',function (e) {
             e.stopPropagation();
-            alert(21);
+            // alert(21);
             $('.zzmask').fadeIn(600);
             $('.z-data').fadeIn(600);
             $(this).parent('div').remove();

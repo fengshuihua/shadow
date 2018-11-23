@@ -36,9 +36,9 @@ html,body {
     /*display: none;*/
 }
 .zzmask .zed {
-    width: 212px;
-    height: 403px;
-    margin: 0 auto;
+    /*width: 100%;*/
+    /*height: 403px;*/
+    /*margin: 0 auto;*/
     font-size: 16px;
 }
 .ztitle {
@@ -53,63 +53,82 @@ html,body {
     padding: 3px;
 }
 p.zcar {
-    height: 35px;
-    width: 380px;
+    height: 45px;
+    width: 290px;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
-    font-size: 15px;
-    line-height: 30px;
+    font-size: 17px;
+    line-height: 45px;
     text-align: center;
     color: #fff;
+    cursor: pointer;
     padding: 3px;
     background-color: orangered;
-    position: absolute;
-    bottom: 73px;
-    left: 50%;
-    margin-left: -191px;
+    /*position: absolute;*/
+    /*bottom: 6px;*/
+    /*left: 50%;*/
+    /*margin-left: -191px;*/
 
 }
 .zed span {
-border: 1px solid #ccc;
-border-radius: 10px;
-
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
 
 }
 .zed img {
-width: 100%;
-cursor: pointer;
+    width: 100%;
+    cursor: pointer;
 }
-.zed div {
-    width: 400px;
-    height: 600px;
+.zed div:nth-of-type(1) {
+    width: 30%;
+    /*padding: 20px;*/
+    /*margin: 0 auto;*/
+    /*margin-left: 344px;*/
+    /*height: 500px;*/
+    /*margin: 10px 0;*/
+    /*display: inline-block;*/
+    /*height: 600px;*/
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -15%;
+    /*margin-top: -13%*/
+
+}
+.zed div:nth-of-type(2) {
+    width: 300px;
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-left: -200px;
-    margin-top: -250px;
-
+    margin-top: 208px;
+    margin-left: -146px;
+    /*display: none;*/
+    z-index: 9999;
+    opacity: 0.7;
 }
 .zed span:nth-of-type(1) {
-    position: absolute;
-    bottom: 130px;
-    left: 50%;
-    margin-left: -154px;
-    width: 167px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    padding-bottom: 30px;
-}
-.zed span:nth-of-type(2) {
-    position: absolute;
-    bottom: 130px;
-    left: 50%;
-    margin-left: 35px;
-    width: 100px;
+    /*position: absolute;*/
+    /*bottom: 44px;*/
+    /*left: 50%;*/
+    /*margin-left: -154px;*/
+    width: 185px;
     height: 35px;
     line-height: 35px;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
+}
+.zed span:nth-of-type(2) {
+    /*position: absolute;*/
+    /*bottom: 44px;*/
+    /*left: 50%;*/
+    /*margin-left: 35px;*/
+    width: 95px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
     background-color: orange;
 }
 .zzprice {

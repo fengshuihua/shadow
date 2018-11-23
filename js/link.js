@@ -23,7 +23,7 @@ $(function () {
         // console.log($('.zcar'));
 
         $('.zcar').on('click',function () {
-            alert(20);
+            alert(21);
             $('.z-data').fadeIn(600);
             $(this).parent('div').remove();
             //添加购物车
@@ -133,7 +133,7 @@ $(function () {
             // 创建li
             function creatli(obj) {
                 var zzsrc = obj.content;
-                var zarr = zzsrc.split(',￥');
+                var zarr = zzsrc.split(',¥');
                 var zli = $('<li></li>');
                 var ohtml =
                     '<span class="zleft">' + zarr[0] + '</span>' +

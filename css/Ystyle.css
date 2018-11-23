@@ -47,6 +47,9 @@ body {
     border-bottom: 10px rgba(255,255,255,.4) solid;
 
 }
+.season span {
+    display: none;
+}
 .season p {
     border: 1px solid rgba(255,255,255,.3);
     width: 180px;
@@ -403,6 +406,9 @@ body {
     bottom: 150px;
     left: 150px;
 }
+.left-price span:nth-of-type(2){
+    display: none;
+}
 .hide-img {
     display: none;
     position: absolute;
@@ -591,7 +597,10 @@ body {
     top: 50%;
     margin-top: -25px;
 }
-.eight span {
+.eight ul span {
+    display: none;
+}
+.eight p >span {
     cursor: pointer;
     font-size: 70px;
     position: absolute;

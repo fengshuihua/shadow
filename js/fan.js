@@ -88,7 +88,7 @@ $(function(){
         li.hover(function(e){
             e = e || window.event;
             x = e.pageX, //鼠标刚移入div内，记录下当前的x坐标
-                y = -e.pageY; //鼠标刚移入div内，记录下当前的y坐标
+            y = -e.pageY; //鼠标刚移入div内，记录下当前的y坐标
             K = (y - y0) / (x - x0); //K是鼠标移入点和中心点的斜率
 //当K大于k并且小于-k时，则肯定是左右移入，当移入点的x坐标大于中心点 ，则为右移入，小于则是左移入
             if(k < K && K < -k){
@@ -120,15 +120,15 @@ $(function(){
         },function () {
             if(k < K && K < -k){
                 if(x > x0){
-                    ctr_div.animate({"left":liw,"opacity":0},600)
+                    ctr_div.animate({"left":liw,"opacity":0},600);
                 }else{
-                    ctr_div.animate({"left":-liw,"opacity":0},600)
+                    ctr_div.animate({"left":-liw,"opacity":0},600);
                 }
             }else{
                 if(y > y0){
-                    ctr_div.animate({"top":-lih,"opacity":0},600)
+                    ctr_div.animate({"top":-lih,"opacity":0},600);
                 }else{
-                    ctr_div.animate({"top":lih,"opacity":0},600)
+                    ctr_div.animate({"top":lih,"opacity":0},600);
                 }
             }
         })

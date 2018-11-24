@@ -82,10 +82,14 @@ $(".ctl_next").click(function () {
         data.push(temp);
         change();
     }
-var timer_y = setInterval(next_y,3000);
-$(".eight").hover(function () {
+var timer_y = setInterval(next_y,2000);
+    var y_index = 0;
+$(".eight li").hover(function () {
     clearInterval(timer_y);
+     y_index = $(this).index();
+    $(".eight .y_mask").eq(y_index).css("display","block");
 },function () {
-    timer_y = setInterval(next_y,3000);
+    timer_y = setInterval(next_y,2000);
+    $(".eight .y_mask").eq(y_index).css("display","none");
 })
 })

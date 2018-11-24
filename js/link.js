@@ -39,7 +39,7 @@ $(function () {
 
         $('.zcar').on('click',function (e) {
             e.stopPropagation();
-            // alert(30);
+            // alert(35);
             $('.zzmask').fadeIn(600);
             $('.z-data').fadeIn(600);
             $(this).parent('div').remove();
@@ -136,20 +136,29 @@ $(function () {
         //         }
         //     });
         //
+
             $('.ment').eq(0).hover(function () {
-                $('.code').eq(0).fadeIn(500);
+
+                $('.code').eq(0).stop().fadeIn(500);
             },function () {
-                $('.code').eq(0).fadeOut(500);
+
+                $('.code').eq(0).stop().fadeOut(500);
             });
+
             $('.ment').eq(1).hover(function () {
-                $('.code').eq(1).fadeIn(500);
+
+                $('.code').eq(1).stop().fadeIn(500);
             },function () {
-                $('.code').eq(1).fadeOut(500);
+
+                $('.code').eq(1).stop().fadeOut(500);
             });
+
             $('.ment').eq(2).hover(function () {
-                $('.code').eq(2).fadeIn(500);
+
+                $('.code').eq(2).stop().fadeIn(500);
             },function () {
-                $('.code').eq(2).fadeOut(500);
+
+                $('.code').eq(2).stop().fadeOut(500);
             });
         //
     });
@@ -168,7 +177,7 @@ $(function () {
 
     // console.log($('#car'));
     $('#car').on('click',function (e) {
-        // alert(28);
+        // alert(31);
         e.stopPropagation();
         $('.zzmask').fadeIn(600);
         $('.z-data').fadeIn(600);

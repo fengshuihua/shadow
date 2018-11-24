@@ -305,6 +305,7 @@ select {
     right: 0;
     top: 186px;
     display: none;
+    z-index: 6666;
 }
 .mode span:nth-of-type(1) {
     right: 295px;

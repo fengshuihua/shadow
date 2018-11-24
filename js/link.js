@@ -1,7 +1,11 @@
 
 $(function () {
+
+
     var opt = 1;
     var strz = 0;
+    var arrM = [];
+    zcarajax();
 
 
     $('.zlink').on('click',function () {
@@ -49,6 +53,7 @@ $(function () {
                     success: function (obj) {
                         // console.log(obj);
                         creatli(obj);
+                        zcarajax();
                     }
                 });
                 $.ajax({
@@ -56,13 +61,13 @@ $(function () {
                     url: 'shadow.php',
                     data: 'act=get&page=1',
                     success: function (obj) {
-                        console.log(obj);
+                        // console.log(obj);
                         // console.log(obj.length);
                         // console.log(eval(obj));
                         $('.z-data > ul').empty();
-                        var arrM = eval(obj);
-                        console.log(arrM);
-                        console.log(arrM.length);
+                        arrM = eval(obj);
+                        // console.log(arrM);
+                        // console.log(arrM.length);
                         for (var i = 0; i < arrM.length; i++) {
 
                             var arrz = arrM[i];
@@ -77,21 +82,26 @@ $(function () {
 
 
 
-                $('.ment').eq(0).hover(function () {
-                    $('.code').eq(0).fadeIn(500);
-                },function () {
-                    $('.code').eq(0).fadeOut(500);
-                });
-                $('.ment').eq(1).hover(function () {
-                    $('.code').eq(1).fadeIn(500);
-                },function () {
-                    $('.code').eq(1).fadeOut(500);
-                });
-                $('.ment').eq(2).hover(function () {
-                    $('.code').eq(2).fadeIn(500);
-                },function () {
-                    $('.code').eq(2).fadeOut(500);
-                });
+                // $('.ment').eq(0).mouseenter(function () {
+                //     // alert(91)
+                //     $('.code').eq(0).css('display','block');
+                // }).mouseout(function(){
+                //     $('.code').eq(0).css('display','none');
+                // })
+
+                //     function () {
+                //     $('.code').eq(0).css('display','none');
+                // });
+                // $('.ment').eq(1).hover(function () {
+                //     $('.code').eq(1).css('display','block');
+                // },function () {
+                //     $('.code').eq(1).css('display','none');
+                // });
+                // $('.ment').eq(2).hover(function () {
+                //     $('.code').eq(2).css('display','block');
+                // },function () {
+                //     $('.code').eq(2).css('display','none');
+                // });
 
 
 
@@ -126,21 +136,21 @@ $(function () {
         //         }
         //     });
         //
-        //     $('.ment').eq(0).hover(function () {
-        //         $('.code').eq(0).fadeIn(500);
-        //     },function () {
-        //         $('.code').eq(0).fadeOut(500);
-        //     });
-        //     $('.ment').eq(1).hover(function () {
-        //         $('.code').eq(1).fadeIn(500);
-        //     },function () {
-        //         $('.code').eq(1).fadeOut(500);
-        //     });
-        //     $('.ment').eq(2).hover(function () {
-        //         $('.code').eq(2).fadeIn(500);
-        //     },function () {
-        //         $('.code').eq(2).fadeOut(500);
-        //     });
+            $('.ment').eq(0).hover(function () {
+                $('.code').eq(0).fadeIn(500);
+            },function () {
+                $('.code').eq(0).fadeOut(500);
+            });
+            $('.ment').eq(1).hover(function () {
+                $('.code').eq(1).fadeIn(500);
+            },function () {
+                $('.code').eq(1).fadeOut(500);
+            });
+            $('.ment').eq(2).hover(function () {
+                $('.code').eq(2).fadeIn(500);
+            },function () {
+                $('.code').eq(2).fadeOut(500);
+            });
         //
     });
 
@@ -149,18 +159,20 @@ $(function () {
                 // alert(102);
                 $('.z-data').fadeOut(600);
                 $('.zzmask').fadeOut(600);
+                $('.zpay').css('display','none');
             });
 
 
 
 
 
-    console.log($('#car'));
+    // console.log($('#car'));
     $('#car').on('click',function (e) {
-        alert(1);
+        // alert(28);
         e.stopPropagation();
         $('.zzmask').fadeIn(600);
         $('.z-data').fadeIn(600);
+        zcarajax();
     });
 
 
@@ -187,23 +199,39 @@ $(function () {
             }
 
             // 删除
+
             function del(zli, obj) {
                 zli.find('.delete').click(function () {
+
                     // console.log(obj.id);
                     $(this).parent('li').slideUp(500, function () {
+
                         $(this).remove();
+
                         $.ajax({
                             type: 'get',
                             url: 'shadow.php',
                             data: 'act=del&id=' + obj.id,
                             dataType: 'json',
                             success: function (res) {
-                                // console.log(res);
+
+                                console.log(res);
+                                zcarajax();
+
+                                // arrM = eval(res);
+                                // console.log(arrM);
+                                // console.log(arrM.length);
+                                // $('#car').children().text(arrM.length);
                             }
-                        })
-                    })
+                        });
+
+
+                    });
+
+
                 });
             }
+
 
             // 付款
             function paymoney() {
@@ -235,5 +263,30 @@ $(function () {
                 });
             }
 
+
+            function zcarajax() {
+                $.ajax({
+                    type: 'get',
+                    url: 'shadow.php',
+                    data: 'act=get&page=1',
+                    success: function (obj) {
+                        // console.log(obj);
+                        // console.log(obj.length);
+                        // console.log(eval(obj));
+                        $('.z-data > ul').empty();
+                        arrM = eval(obj);
+                        // console.log(arrM);
+                        // console.log(arrM.length);
+                        $('#car').children().text(arrM.length);
+                        for (var i = 0; i < arrM.length; i++) {
+
+                            var arrz = arrM[i];
+
+                            $('.z-data > ul').append(creatli(arrz));
+                        }
+
+                    }
+                });
+            }
 
 })

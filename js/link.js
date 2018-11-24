@@ -30,6 +30,7 @@ $(function () {
             e.stopPropagation();
         });
 
+
         // console.log($('.zcar'));
 
         $('.zcar').on('click',function (e) {
@@ -56,17 +57,25 @@ $(function () {
                     data: 'act=get&page=1',
                     success: function (obj) {
                         console.log(obj);
+                        // console.log(obj.length);
                         // console.log(eval(obj));
                         $('.z-data > ul').empty();
                         var arrM = eval(obj);
+                        console.log(arrM);
+                        console.log(arrM.length);
                         for (var i = 0; i < arrM.length; i++) {
+
                             var arrz = arrM[i];
 
                             $('.z-data > ul').append(creatli(arrz));
                         }
+
                     }
                 });
-        })
+        });
+
+
+
 
                 $('.ment').eq(0).hover(function () {
                     $('.code').eq(0).fadeIn(500);
@@ -141,7 +150,23 @@ $(function () {
                 $('.z-data').fadeOut(600);
                 $('.zzmask').fadeOut(600);
             });
-            
+
+
+
+
+
+    console.log($('#car'));
+    $('#car').on('click',function (e) {
+        alert(1);
+        e.stopPropagation();
+        $('.zzmask').fadeIn(600);
+        $('.z-data').fadeIn(600);
+    });
+
+
+
+
+
 
 
             // 创建li

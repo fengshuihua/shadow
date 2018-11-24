@@ -33,7 +33,7 @@ $(function () {
     // // console.log(arrz);
     // store.set('list', arrz);
     //
-    $('#car > span').text(arrz.length);
+    // $('#car > span').text(arrz.length);
 
 
 
@@ -81,10 +81,10 @@ $(function () {
         // rendering();
     });
 
-    $('#car').click(function () {
-        // window.open('跳转04.html');
-        $('.cover').fadeIn(500);
-    });
+    // $('#car').click(function () {
+    //     // window.open('跳转04.html');
+    //     $('.cover').fadeIn(500);
+    // });
     $('.cover').click(function () {
 
         $('.cover').fadeOut(500);
@@ -110,11 +110,7 @@ $(function () {
 
     };
 
-    function rushnum() {
 
-
-
-    }
 
 
 

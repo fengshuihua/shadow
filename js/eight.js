@@ -84,12 +84,16 @@ $(".ctl_next").click(function () {
     }
 var timer_y = setInterval(next_y,2000);
     var y_index = 0;
-$(".eight li").hover(function () {
+$(".eight").hover(function () {
     clearInterval(timer_y);
-     y_index = $(this).index();
-    $(".eight .y_mask").eq(y_index).css("display","block");
 },function () {
     timer_y = setInterval(next_y,2000);
-    $(".eight .y_mask").eq(y_index).css("display","none");
 })
+    $(".eight li").hover(function () {
+        y_index = $(this).index();
+        $(".eight .y_mask").eq(y_index).css("display","block");
+    },function () {
+        $(".eight .y_mask").eq(y_index).css("display","none");
+    })
+
 })

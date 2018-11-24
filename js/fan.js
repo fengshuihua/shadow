@@ -64,4 +64,75 @@ $(function(){
         }, function() {
             timer = setInterval(changePositionRight, 2000);
         });
+
+
+    //    鼠标滑动门
+    var list1 = $('.ctr_change ul li');
+    list1.each(function (ele,index) {
+        var li = $(this);
+        var liw = $(this).width();
+        var lih = $(this).height();
+        var ctr_div = $(this).children("div");
+        var x1 = li.offset().left,
+            y1 = -li.offset().top, //注意坐标，所有的y坐标都是负数
+            x2 = x1 + li.width(),
+            y2 = y1 - li.height(), //同样y坐标为负数
+            x0 = (x1 + x2) / 2,
+            y0 = (y1 + y2) / 2;
+        var k = (y2 - y1) / (x2 - x1); //斜率k
+// alert(-k)
+        var e;
+        var x;
+        var y;
+        var K;
+        li.hover(function(e){
+            e = e || window.event;
+            x = e.pageX, //鼠标刚移入div内，记录下当前的x坐标
+                y = -e.pageY; //鼠标刚移入div内，记录下当前的y坐标
+            K = (y - y0) / (x - x0); //K是鼠标移入点和中心点的斜率
+//当K大于k并且小于-k时，则肯定是左右移入，当移入点的x坐标大于中心点 ，则为右移入，小于则是左移入
+            if(k < K && K < -k){
+                if(x > x0){
+                    // alert("右")
+                    ctr_div.css("left",liw);
+                    ctr_div.css("top",0);
+                    ctr_div.stop().animate({"left":0,"opacity":1},600);
+                }else{
+                    // alert('左');
+                    ctr_div.css("left",-liw);
+                    ctr_div.css("top",0);
+                    ctr_div.stop().animate({"left":0,"opacity":1},600);
+                }
+            }else{
+//注意此处y是负数，判断上下的方法同上
+                if(y > y0){
+                    // alert('上');
+                    ctr_div.css("top",-lih);
+                    ctr_div.css("left",0);
+                    ctr_div.stop().animate({"top":0,"opacity":1},600);
+                }else{
+                    // alert('下');
+                    ctr_div.css("top",lih);
+                    ctr_div.css("left",0);
+                    ctr_div.stop().animate({"top":0,"opacity":1});
+                }
+            }
+        },function () {
+            if(k < K && K < -k){
+                if(x > x0){
+                    ctr_div.animate({"left":liw,"opacity":0},600)
+                }else{
+                    ctr_div.animate({"left":-liw,"opacity":0},600)
+                }
+            }else{
+                if(y > y0){
+                    ctr_div.animate({"top":-lih,"opacity":0},600)
+                }else{
+                    ctr_div.animate({"top":lih,"opacity":0},600)
+                }
+            }
+        })
+
+    })
+
     })
